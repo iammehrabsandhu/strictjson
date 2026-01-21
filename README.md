@@ -16,7 +16,7 @@ Unlike the standard `encoding/json` package which uses case-insensitive matching
 ## Installation
 
 ```bash
-go get github.com/yourusername/strictjson
+go get github.com/iammehrabsandhu/strictjson
 ```
 
 ## Usage
@@ -91,4 +91,4 @@ data := []byte(`{
 
 ## Performance
 
-`strictjson` uses reflection to traverse and validate the structure before delegating to `encoding/json` for the actual parsing. This adds some overhead (approx 2.5x slower than standard library), but provides strict validation guarantees essential for robust API integrations.
+`strictjson` uses reflection to traverse and validate the structure before delegating to `encoding/json` for the actual parsing. This adds some slight overhead, but provides strict validation guarantees essential for robust API integrations.
